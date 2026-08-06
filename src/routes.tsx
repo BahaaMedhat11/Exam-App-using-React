@@ -1,13 +1,18 @@
 import type { RouteObject } from "react-router";
+import AuthGurd from "./features/auth/components/layout/AuthLayout";
+import { authRoutes } from "./features/auth/routes/auth.route";
 
 export const routes: RouteObject[] = [
   {
     path: "/",
-    element: (
-      <>
-        <h2>home page</h2>
-      </>
-    ),
+    children: [
+      // Authentication Route
+
+      {
+        element: <AuthGurd />,
+        children: authRoutes,
+      },
+    ],
   },
   {
     path: "/auth",
