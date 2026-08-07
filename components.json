@@ -14,7 +14,7 @@
   "rtl": false,
   "aliases": {
     "components": "@/components",
-    "utils": "@/shared/utils",
+    "utils": "@/shared/lib/tailwind-merge",
     "ui": "@/components/ui",
     "lib": "@/shared/lib",
     "hooks": "@/hooks"
